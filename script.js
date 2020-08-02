@@ -29,7 +29,7 @@ function generatePassword() {
   if (confirm("Would you like numbers")) {
     userChars.push(nums)
   }
-  console.log(userChars)
+  
   if (length < 8 || length > 128) {
     alert("Your password is not between 8 and 128 characters")
     return ""
@@ -45,7 +45,7 @@ function generatePassword() {
       password = password + randomActualCharacter
       // [[a,b,c],[1,2,3]]
     }
-     console.log(password)
+     
      return password
   }
 }
